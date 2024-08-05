@@ -1,6 +1,6 @@
 #!/bin/bash
 
-docker exec -it configSrv mongosh --port 27017 <<EOF
+docker compose exec -T configSrv mongosh --port 27017 --quiet<<EOF
 rs.initiate(
   {
     _id : "config_server",

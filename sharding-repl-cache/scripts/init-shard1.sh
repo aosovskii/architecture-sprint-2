@@ -1,6 +1,6 @@
 #!/bin/bash
 
-docker exec -it shard1 mongosh --port 27018 <<EOF
+docker compose exec -T shard1a mongosh --port 27018 --quiet<<EOF
 rs.initiate(
   {
     _id : "shard1",

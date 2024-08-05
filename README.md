@@ -2,8 +2,12 @@
 
 ## Как запустить
 
-Запускаем mongodb и приложение
+Переходим в рабочую директорию
+```shell
+cd sharding-repl-cache
+```
 
+Запускаем mongodb и приложение
 ```shell
 docker compose up -d
 ```
@@ -11,7 +15,7 @@ docker compose up -d
 Инициализация
 
 ```shell
-./scripts/init.sh
+bash ./scripts/init.sh
 ```
 
 Заполняем mongodb данными
