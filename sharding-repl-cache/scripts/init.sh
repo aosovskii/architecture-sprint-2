@@ -23,4 +23,5 @@ sleep 5
 sh ./init-shard2.sh
 sleep 5
 sh ./init-router.sh
-
+sleep 5
+sh ./mongo-init.sh
