@@ -16,12 +16,22 @@ wait_for_port 27021
 wait_for_port 27024
 
 cd scripts
+echo "Start init-config-server"
 sh ./init-config-server.sh
-sleep 5
+echo "End init-config-server"
+sleep 10
+echo "Start init-shard1"
 sh ./init-shard1.sh
-sleep 5
+echo "End init-shard1"
+sleep 10
+echo "Start init-shard2"
 sh ./init-shard2.sh
-sleep 5
+echo "End init-shard2"
+sleep 10
+echo "Start init-router"
 sh ./init-router.sh
-sleep 5
+echo "End init-router"
+sleep 20
+echo "Start mongo-init"
 sh ./mongo-init.sh
+echo "End mongo-init"
